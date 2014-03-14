@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/jstl.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/org.springframework.asm-3.0.0.M3.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/org.springframework.expression-3.0.0.M3.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/spring-aop.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/spring-beans.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/spring-context.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/spring-context-support.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/spring-core.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/spring-jdbc.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/spring-jms.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/spring-orm.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/spring-test.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/spring-tx.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/spring-web.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/spring-webmvc.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/spring-webmvc-portlet.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/spring-webmvc-struts.jar"/>
+	<classpathentry kind="lib" path="G:/Softwares/PRogramming/Spring/Spring-lib/standard.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

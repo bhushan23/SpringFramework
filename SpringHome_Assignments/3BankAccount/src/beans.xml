@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean id="cust" class="com.vit.Customer">
+<property name="name" value="bhushan"> </property>
+<property name="ssn" value="12"></property>
+</bean>
+<bean id="cust1" class="com.vit.Customer">
+<property name="name" value="sonawane"> </property>
+<property name="ssn" value="16"></property>
+</bean>
+<bean id="acnt" class="com.vit.Account" >
+<property name="accno" value="1234"> </property>
+<property name="type" value="SAVINGS"></property>
+<property name="bal" value="1234567"> </property>
+<property name="customer">
+<list>
+<ref bean="cust"></ref>
+<ref bean="cust1"></ref>
+</list>
+</property>
+</bean>
+</beans>

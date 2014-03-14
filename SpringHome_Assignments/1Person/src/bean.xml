@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+<bean id="person" class="com.info.Person">
+
+<!-- Contructor Injection -->
+<constructor-arg index="0" type="int" value="11"></constructor-arg>
+<constructor-arg index="1" type="java.lang.String" value="Bhush"></constructor-arg>
+
+<!-- Setter Injectiong 
+<property name="pan" value="1"> </property>
+<property name="name" value="bhushan"></property>
+<property name="city" value="pune"></property>
+<property name="income" value="110000000000000000000000000000"></property>
+-->
+</bean>
+
+</beans>

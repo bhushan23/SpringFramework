@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean id="doc" class="com.DocDetails.Doctor">
+<constructor-arg index="0" type="java.lang.String" value="Bhushan"></constructor-arg>
+<constructor-arg index="1" type="java.lang.String" value="Compiler"></constructor-arg>
+<constructor-arg index="2" type="com.DocDetails.Address" ref="address"></constructor-arg>
+
+</bean>
+<bean id="address" class="com.DocDetails.Address">
+<property name="state" value="Maha"></property>
+<property name="city" value="Pune"></property>
+<property name="pin" value="22345"></property>
+</bean>
+</beans>
+

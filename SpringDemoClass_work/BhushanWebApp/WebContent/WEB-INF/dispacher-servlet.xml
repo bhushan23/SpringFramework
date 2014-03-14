@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans >
+<bean id="viewResolver" class="org.springframework.web.servlet.ViewResolver">
+<property name="prefix" value="/WebContent/WEB_INF/jsp"/>
+<property name="postfix" value=".jsp"/>
+</bean>
+
+<bean name="/login.html" class="com.vit.LoginController">
+<property name="message" value="Please Login to your account"/>
+</bean>
+</beans>

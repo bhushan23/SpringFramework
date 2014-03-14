@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="DOB" class="com.vit.Mydate">
+<property name="day" value="23"></property>
+<property name="month" value="6"></property>
+<property name="year" value="1994"></property>
+</bean>
+
+<bean id="student" class="com.vit.Student" autowire="byName">
+<property name="name" value="Bhushan"></property>
+
+</bean>
+<!-- autowire options 1) byName=Checks object name and ID in xml 2)byType=Object Type and Beans Object in XML -->
+<bean id="faculty" class="com.vit.Faculty" autowire="byType">
+<property name="name" value="Patwardhan"></property>
+
+</bean>
+
+</beans>

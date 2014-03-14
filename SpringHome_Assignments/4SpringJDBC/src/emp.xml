@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="em" class="com.emp.empl">
+ <property name="firstname" value="bhushan" />
+ <property name="lastname" value="sonawane" /> 
+ <property name="empid" value="111011" />
+</bean>
+
+<bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
+	<property name="driverClassName" value="oracle.jdbc.OracleDriver" />
+	<property name="url" value="jdbc:oracle:thin://@localhost:1521:XE" />
+	<property name="username" value="springtest" />
+	<property name="password" value="spring" />
+</bean>
+<bean id="el" class="com.emp.Emp">
+<property name="simpleJdbctemplate" ref="jdbcTemplate"></property>
+</bean>
+<bean id="jdbcTemplate" class="org.springframework.jdbc.core.simple.SimpleJdbcTemplate">
+	<!-- In Spring 2.5.5, NO default constructor is defined in SimpleJdbcTemplate -->
+	<!-- <property name="dataSource" ref="datasource" /> -->
+	<constructor-arg  ref="datasource" />
+</bean>
+
+</beans>

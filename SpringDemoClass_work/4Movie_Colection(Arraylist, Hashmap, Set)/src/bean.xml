@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="movie" class="com.vit.Movie">
+<property name="name" value="Dhoom 3"></property>
+<property name="producer" value="Chopra"></property>
+<property name="leadactor">
+<set>
+<value>Amir Khan</value>
+<value>Salman Khan</value>
+<value>Amir Khan</value>
+<!-- Set does not allows duplication -->
+</set>
+</property>
+<property name="leadactress" value="Katarina Kaif"></property>
+<property name="songs" >
+<list>
+<value>Dhoom</value>
+<value>Malang</value>
+<value>kamli</value>
+<value>kamli</value>
+<!-- List allows duplication -->
+</list>
+</property>
+
+<property name="info">
+<map>
+<entry key="income" value="1000Million"></entry>
+<entry key="leadactor" value="Aamir Khan"></entry>
+
+</map>
+</property>
+</bean>
+
+</beans>
+
+
+
